@@ -9,3 +9,19 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home');
 });
+
+Route::get('/products', function () {
+    echo "LISTADO DE TODOS LOS PRODUCTOS";
+});
+
+Route::get('/products/create', function () {
+    echo "FORMULARIO PARA CREAR UN PRODUCTO";
+});
+
+Route::get('/products/{name}', function ($name) {
+    echo "PRODUCTO: computador";
+});
+
+Route::get('/products/{name}/{category}', function ($name, $category) {
+    echo "PRODUCTO: $name, y tiene una $category";
+});
