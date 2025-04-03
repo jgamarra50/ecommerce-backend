@@ -10,26 +10,16 @@
     <div class="container mx-auto py-10">
         <h2 class="text-2xl font-bold text-center mb-6">Lista de Productos</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            @foreach ($listProducts as $product)
             <div class="bg-white p-4 shadow-md text-center">
-                <h3 class="text-lg font-semibold">Producto 1</h3>
-                <p>Descripción breve del producto 1.</p>
+                <h3 class="text-lg font-semibold">{{$product->name}}</h3>
+                <p>{{$product->description}}</p>
             </div>
-            <div class="bg-white p-4 shadow-md text-center">
-                <h3 class="text-lg font-semibold">Producto 2</h3>
-                <p>Descripción breve del producto 2.</p>
-            </div>
-            <div class="bg-white p-4 shadow-md text-center">
-                <h3 class="text-lg font-semibold">Producto 3</h3>
-                <p>Descripción breve del producto 3.</p>
-            </div>
-            <div class="bg-white p-4 shadow-md text-center">
-                <h3 class="text-lg font-semibold">Producto 4</h3>
-                <p>Descripción breve del producto 4.</p>
-            </div>
-            <div class="bg-white p-4 shadow-md text-center">
-                <h3 class="text-lg font-semibold">Producto 5</h3>
-                <p>Descripción breve del producto 5.</p>
-            </div>
+            @endforeach
+           
+            {{$listProducts->links() }}
+            
         </div>
     </div>
 </body>
