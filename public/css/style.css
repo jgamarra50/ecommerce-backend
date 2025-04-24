@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.navbar, .footer {
+    background-color: #FF9900;
+    color: white;
+}
+.product-form {
+    padding: 20px 0;
+    background-color: #FFFFFF;
+}
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #FF9900;
+    border-radius: 10px;
+}
+.form-container h2 {
+    color: #FF9900;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn-primary {
+    background-color: #FFCC00;
+    border-color: #FFCC00;
+    color: black;
+}
+.btn-primary:hover {
+    background-color: #e6b800;
+    border-color: #e6b800;
+}
